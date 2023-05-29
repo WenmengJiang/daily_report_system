@@ -55,6 +55,11 @@ public class AuthAction extends ActionBase {
 
 
 
+/**
+ * ログイン処理を行う
+ * @throws ServletException
+ * @throws IOException
+ */
 public void login() throws ServletException, IOException {
 
     String code = getRequestParam(AttributeConst.EMP_CODE);
@@ -93,4 +98,3 @@ public void login() throws ServletException, IOException {
         forward(ForwardConst.FW_LOGIN);
     }
 }}
-
